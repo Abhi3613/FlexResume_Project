@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chapter 2.8 - CSS</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e3f2fd, #ffffff);
+        }
+
+        h2
+         {
+        text-align: center;
+            color: #2c3e50;
+        }
+
+        section {
+            width: 80%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+
+        .experience-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .exp-box {
+            flex: 1;
+            padding: 20px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #1e88e5, #42a5f5);
+            color: white;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .exp-box:hover {
+            transform: translateY(-5px);
+        }
+
+        /* -------- 27 Work Experience Section 2 -------- */
+
+        .exp-box2 {
+            flex: 1;
+            padding: 20px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #43a047, #66bb6a);
+            color: white;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .exp-box2:hover {
+            transform: translateY(-5px);
+        }
+
+        /* -------- 29 Media Queries -------- */
+
+        @media (max-width: 768px) {
+
+            section {
+                width: 90%;
+            }
+
+            .experience-container {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- 26 Work Experience Section 1 -->
+    <section>
+        <h2>Work Experience - Internship</h2>
+        <div class="experience-container">
+            <div class="exp-box">
+                <h3>FullStack Developer </h3>
+                <p>Worked on HTML, CSS and responsive and Native layouts.</p>
+                <p>Improved UI design and Flexbox skills.</p>
+            </div>
+        </div>
+    </section>
+
+     <section>
+        <h2>Work Experience - Projects</h2>
+        <div class="experience-container">
+            <div class="exp-box2">
+                <h3>Freelancing Employment and Entrepreneurship platform</h3>
+                <p>Designed responsive website and all client Service Platform.</p>
+                <p>Used Media Queries for mobile support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 27 Work Experience Section 2 -->
+    <section>
+        <h2>Work Experience - Projects</h2>
+        <div class="experience-container">
+            <div class="exp-box2">
+                <h3>Portfolio Website</h3>
+                <p>Designed responsive personal resume website.</p
+                    >
+                <p>Used  Queries for mobile support.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
